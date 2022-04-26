@@ -1,0 +1,29 @@
+{
+    "name": "buildspace-faq",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "next",
+        "start": "next start",
+        "build": "next build"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://helloitsm3@github.com/helloitsm3/buildspace-faq.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/helloitsm3/buildspace-faq/issues"
+    },
+    "homepage": "https://github.com/helloitsm3/buildspace-faq#readme",
+    "dependencies": {
+        "next": "^12.1.5",
+        "nextra": "^1.1.0",
+        "nextra-theme-docs": "^1.2.6",
+        "react": "^18.0.0",
+        "react-dom": "^18.0.0"
+    }
+}
