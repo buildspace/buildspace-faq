@@ -34,5 +34,5 @@ export default {
             <meta name="og:title" content="Buildspace FAQ: All your questions answered" />
         </>
     ),
-    unstable_faviconGlyph: "👋",
+    unstable_faviconGlyph: "🦄",
 };
