@@ -50,3 +50,83 @@ const tx = await wavePortalContract.wave("Hello", {
     <li>Make sure to update your ABI to the latest version after deploying your smart contract</li>
     <li>Do remember to save your changes in your smart contract before deploying</li>
 </ol>
+
+## Many vulnerabilities when installing hardhat
+
+**Why is this happening?**
+
+<span>
+    This happens because most of the dependencies hardhat used is depenedent on other packages that might be vulnerable. You can simply
+    ignore it as you only need hardhat to help you with compiling and deploying your smart contract and will not be needed in your
+    production environment. However, if you want to fix this issue, you're free to submit a PR here
+    [hardhat](https://github.com/NomicFoundation/hardhat)
+</span>
+
+## Timeout error
+
+**Why is this happening?**
+
+<span>This happens when your contract deployment takes too long to deploy or that your RPC endpoint is not responding</span>
+
+**✅ Solution**
+
+<span>You will need to recreate a new Alchemy app from the dashboard and update it in your environment variables</span>
+
+## Error HH100: Network rinkeby doesn’t exist
+
+**Why is this happening?**
+
+<span>This is usually caused by not having a rinkeby network in your `hardhat.config.js`</span>
+
+**✅ Solution**
+
+<span>Make sure your `hardhat.config.js` looks like this and also do save your changes before running any commands</span>
+
+```javascript
+// hardhat.config.js
+require("@nomiclabs/hardhat-waffle");
+require("dotenv").config();
+
+// This is a sample Hardhat task. To learn how to create your own go to
+// https://hardhat.org/guides/create-task.html
+task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
+    const accounts = await hre.ethers.getSigners();
+
+    for (const account of accounts) {
+        console.log(account.address);
+    }
+});
+
+module.exports = {
+    solidity: "0.8.0",
+    networks: {
+        rinkeby: {
+            url: process.env.ALCHEMY_KEY,
+            accounts: [process.env.ACCOUNT_PRIVATE_KEY],
+        },
+    },
+};
+```
+
+## error:0308010C:digital envelope routines::unsupported
+
+**Why is this happening?**
+
+<span>This error is usually caused by the library using an unsupported version of Node.</span>
+
+**✅ Solution**
+
+<span>You need to download Node v16.14.2 from [here](https://nodejs.org/en/)</span>
+
+## Hardhat menu not showing
+
+**Why is this happening?**
+
+<span>This usually happens when you create a `hardhat.config.js` in your PC drive instead of your project folder.</span>
+
+**✅ Solution**
+
+<ol>
+    <li>Go to `C:/Users/[YOUR_USERNAME]` and delete `hardhat.config.js`</li>
+    <li>Run `npx hardhat`</li>
+</ol>
