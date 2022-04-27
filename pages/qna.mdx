@@ -1,0 +1,52 @@
+---
+title: Questions and Answers
+---
+
+# Frequently Asked Questions
+
+This page contains all frequently asked questions with regards to the issues that users experience when working on the project on buildspace.
+
+## Unpredictable Gas Limit
+
+**What is Gas Limit?**
+
+<span>
+    Gas limit refers to the maximum amount of gas that you're willing to spend on a particular transaction. This error usually happens when
+    you are providing an invalid input when calling a function from your smart contract
+</span>
+
+**✅ Solutions**
+
+```javascript
+// Add a manual gasLimit
+await wavePortalContract.wave("hello", { gasLimit: 300000 });
+
+// Add a dynamic gasLimit
+const startEstimate = await wavePortalContract.estimateGas.wave("Hello");
+const tx = await wavePortalContract.wave("Hello", {
+    gasLimit: startEstimate,
+});
+```
+
+## Call revert exception
+
+**Why is this happening?**
+
+<ol>
+    <li>Your metamask wallet is not connected to the correct network</li>
+    <li>Your contract is not deployed</li>
+    <li>You did not update your ABI after deploying your contract</li>
+    <li>You did not implement this function in your smart contract</li>
+</ol>
+
+**✅ Solutions**
+
+<ol>
+    <li>
+        Make sure you're connected to the correct network your smart contract is deployed to. If your contract is deployed to Rinkeby, make
+        sure you're connected to the Rinkeby network
+    </li>
+    <li>Deploy by running `npx hardhat run scripts/deploy.js --network rinkeby`</li>
+    <li>Make sure to update your ABI to the latest version after deploying your smart contract</li>
+    <li>Do remember to save your changes in your smart contract before deploying</li>
+</ol>
