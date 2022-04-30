@@ -4,4 +4,60 @@ title: Solana
 
 # Frequently Asked Questions
 
-This page contains all frequently asked questions with regards to the issues that users experience when working on the project on buildspace.
+This page contains all frequently asked questions for the Solana ecosystem.
+
+## No default signer found
+
+**Why is this happening?**
+
+<span>This happens because the you do not have any account set as default to sign the transaction.</span>
+
+**✅ Solution**
+Run this command in your terminal and this will update your config file to set a default signer for your project.
+
+```
+solana config set --keypair ~/.config/solana/devnet.json
+```
+
+## baseAccount not provided
+
+**Why is this happening?**
+
+<span>
+    This happens because you did not specify the correct publicKey to the baseAccount field. Another reason why this can happen is probably
+    because you have a typo in your code
+</span>
+
+**✅ Solution**
+Double check your code and ensure that there are no typos in your code. Here's one example of why you might get an error
+
+```
+❌ Code with error
+// create an account keypair for our program to use
+const baseAcccount = anchor.web3.Keypair.generate();
+//call start_stuff_off and pass it the params it needs
+const tx = await program.rpc.startStuffOff({
+  accounts: {
+    baseAcccount: baseAcccount.publicKey,    // This is the typo. It should be baseAccount not baseAcccount
+    user: provider.wallet.publicKey,
+    SystemProgram: SystemProgram.programId,
+  },
+  signers: [baseAcccount],
+});
+```
+
+```
+✅ Fix for this
+// create an account keypair for our program to use
+const baseAccount = anchor.web3.Keypair.generate();
+
+// //call start_stuff_off and pass it the params it needs
+const tx = await program.rpc.startStuffOff({
+  accounts: {
+    baseAccount: baseAccount.publicKey,    // <====== This is the fix.
+    user: provider.wallet.publicKey,
+    systemProgram: SystemProgram.programId,
+  },
+  signers: [baseAccount],
+});
+```
