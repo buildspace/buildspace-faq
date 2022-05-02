@@ -61,3 +61,22 @@ const tx = await program.rpc.startStuffOff({
   signers: [baseAccount],
 });
 ```
+
+## too few X's in template "solana-install-init"
+
+**Why is this happening?**
+
+<span>
+    This happens because your version of Linux does not currently support the mktemp installation command or that solana-init config doesn't
+    currently support your linux version.
+</span>
+
+**✅ Solution**
+If you are on Ubuntu or using Ubuntu on WSL, make sure you are using version 20.04 or 22.04.
+
+<ol>
+    <li>You can install it on their [Official website](https://ubuntu.com/download/desktop)</li>
+    <li>You can download it on [Microsoft store](https://ubuntu.com/wsl)</li>
+    <li>Learn to set it up on [Windows 11](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-11-with-gui-support#1-overview)</li>
+    <li>Learn to set it up on [Windows 10](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#1-overview)
+</ol>
