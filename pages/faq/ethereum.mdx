@@ -190,3 +190,20 @@ module.exports = {
     <li>Fix your image URL and re-deploy your contract.</li>
     <li>Click on the `refresh metadata` button at the top right corner of your NFT page in OpenSea</li>
 </ol>
+
+## Failed to deploy editionDrop. Error (!= 200) =403
+
+**Why is this happening?**
+
+<span>There are various reasons why this can happen.</span>
+<ol>
+    <li>You did not initialize your app in your [ThirdWeb Dashboard](https://thirdweb.com/dashboard)</li>
+    <li>Your firewall is blocking access to ThirdWeb's IPFS</li>
+</ol>
+
+**✅ Solution**
+You need to initialise your ThirdWebSDK by using cloudflare's IPFS. Special thanks to @piperalpha for this solution
+
+```
+const sdk = new ThirdwebSDK(wallet, {}, new IpfsStorage("https://cloudflare-ipfs.com/ipfs/"));
+```
