@@ -82,3 +82,21 @@ If you are on Ubuntu or using Ubuntu on WSL, make sure you are using version 20.
     </li>
     <li>Learn to set it up on [Windows 10](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#1-overview)</li>
 </ol>
+
+## Unrecognized Signer Source for Anchor Build
+
+**The error you are seeing**
+```
+error: Invalid value for '--program-id <PROGRAM_ID>': unrecognized signer source
+There was a problem deploying: Output { status: ExitStatus(ExitStatus(256)), stdout: "", stderr: "" }.
+```
+
+**Why is this happening?**
+
+<span>This happens because the path of your project contains spaces.</span>
+
+**✅ Solution**
+Either replace those spaces with some character or delete them.
+
+**❌ Misguided Fix**
+If you append ```--program-id <your-program-id>``` to the command, deploy will "succeed" but then on Solana Explorer no contract is found.
