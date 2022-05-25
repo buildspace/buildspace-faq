@@ -1,0 +1,24 @@
+---
+title: Unpredictable gas limit
+---
+
+# Unpredictable gas limit
+
+## What is gas limit?
+
+<span>
+    Gas limit refers to the maximum amount of gas that you're willing to spend on a particular transaction. This error usually happens when you are providing an invalid input when calling a function from your smart contract.
+</span>
+
+## Solutions
+
+```js
+// Add a manual gasLimit
+await wavePortalContract.wave("hello", { gasLimit: 300000 });
+
+// Add a dynamic gasLimit
+const startEstimate = await wavePortalContract.estimateGas.wave("Hello");
+const tx = await wavePortalContract.wave("Hello", {
+    gasLimit: startEstimate,
+});
+```

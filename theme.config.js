@@ -2,7 +2,7 @@
 export default {
     github: "https://github.com/helloitsm3/buildspace-faq", // GitHub link in the navbar
     docsRepositoryBase: "https://github.com/helloitsm3/buildspace-faq/blob/master", // base URL for the docs repository
-    titleSuffix: " – Buildspace FAQ",
+    titleSuffix: " – buildspace FAQ",
     nextLinks: true,
     prevLinks: true,
     search: true,
@@ -23,8 +23,8 @@ export default {
     footerEditLink: `Edit this page on GitHub`,
     logo: (
         <>
-            <span className="mr-2 font-extrabold hidden md:inline">Buildspace FAQ</span>
-            <span className="text-gray-600 font-normal hidden md:inline">All your questions answered</span>
+            <span className="mr-2 font-extrabold hidden md:inline">buildspace FAQ</span>
+            <span className="text-gray-600 font-normal hidden md:inline">all your web3 questions answered</span>
         </>
     ),
     head: (

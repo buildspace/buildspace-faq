@@ -1,0 +1,30 @@
+---
+title: Hardhat not displaying logs
+---
+
+# Hardhat not displaying logs
+
+## Why is this happening?
+
+<span>
+  This happens because the latest version of hardhat disabled logging by default.
+</span>
+
+## Solution
+
+<span>There are 2 ways to solving this.</span>
+
+<ol>
+    <li>Downgrade your hardhat to 0.9.1 by running `npm install hardhat@0.9.1`</li>
+    <li>Add this to your hardhat config</li>
+    ```
+    module.exports = {
+        solidity: '0.8.4',
+        networks: {
+            hardhat: {
+                loggingEnabled: true,
+            },
+        },
+    };
+    ```
+</ol>
