@@ -1,7 +1,7 @@
 // theme.config.js
 export default {
-    github: "https://github.com/helloitsm3/buildspace-faq", // GitHub link in the navbar
-    docsRepositoryBase: "https://github.com/helloitsm3/buildspace-faq/blob/master", // base URL for the docs repository
+    github: "https://github.com/buildspace/buildspace-faq", // GitHub link in the navbar
+    docsRepositoryBase: "https://github.com/buildspace/buildspace-faq/blob/master", // base URL for the docs repository
     titleSuffix: " – buildspace FAQ",
     nextLinks: true,
     prevLinks: true,
@@ -13,7 +13,7 @@ export default {
         <>
             <span>
                 MIT {new Date().getFullYear()} ©{" "}
-                <a href="https://github.com/helloitsm3" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/buildspace" target="_blank" rel="noopener noreferrer">
                     CodePerfect
                 </a>
                 .
