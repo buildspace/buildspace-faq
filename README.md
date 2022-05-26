@@ -14,9 +14,9 @@ This is an example of how you can set up your project locally. To get a local co
 1. Clone the repo
 
 ```sh
-git clone with HTTPS          https://github.com/helloitsm3/buildspace-faq.git
-git clone with SSH            git@github.com:helloitsm3/buildspace-faq.git
-git clone with Github CLI     gh repo clone helloitsm3/buildspace-faq
+git clone with HTTPS          https://github.com/buildspace/buildspace-faq.git
+git clone with SSH            git@github.com:buildspace/buildspace-faq.git
+git clone with Github CLI     gh repo clone buildspace/buildspace-faq
 ```
 
 2. Development
@@ -32,7 +32,7 @@ git clone with Github CLI     gh repo clone helloitsm3/buildspace-faq
 
 Check out the following places for more buildspace-related content:
 
--   Contribute on [Github](https://github.com/helloitsm3/buildspace-faq)
+-   Contribute on [Github](https://github.com/buildspace/buildspace-faq)
 -   Join the [discussions on Discord](https://discord.com/invite/buildspace)
 -   Visit [buildspace](https://buildspace.so/) to view all the projects
 -   Follow [@\_buildspace](https://twitter.com/_buildspace) on Twitter for project updates
