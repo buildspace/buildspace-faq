@@ -1,14 +1,8 @@
-<br />
-<div>
-  <div align="center">
-    <h1 style="font-weight: bold">🦄 Buildspace FAQ</h1>
-    <p align="center">
-        Buildspace FAQ is a collection of commonly asked questions from the users. This site lists all questions and answers to help users to better solve their issues during development.
-    </p>
-
-  </div>
-
-  <img src="https://i.imgur.com/8A5GKCR.png" />
+<div align="center">
+  <h1 style="font-weight: bold">🦄 Buildspace FAQ</h1>
+  <p align="center">
+    Buildspace FAQ is a collection of commonly asked questions from the users. This site lists all questions and answers to help users to better solve their issues during development.
+  </p>
 </div>
 
 <br />

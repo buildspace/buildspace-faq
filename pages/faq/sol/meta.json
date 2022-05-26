@@ -1,0 +1,6 @@
+{
+  "baseaccount-not-provided": "baseAccount not provided",
+  "no-default-signer": "No default signer found",
+  "too-few-xs": "Too few Xs in template \"solana-install-init\"",
+  "unrecognized-signer-source": "Unrecognized signer source for Anchor build"
+}
