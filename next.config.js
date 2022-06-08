@@ -1,6 +1,7 @@
 module.exports = {
   reactStrictMode: true,
-  assetPrefix: "help-assets"
+  basePath: "/docs",
+  assetPrefix: "/docs/",
 }
 
 const withNextra = require("nextra")({
