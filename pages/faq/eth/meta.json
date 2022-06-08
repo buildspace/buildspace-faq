@@ -11,5 +11,6 @@
   "nothing-to-compile": "Nothing to compile",
   "opensea-not-showing-nfts": "OpenSea not showing my NFTs",
   "timeout-error": "Timeout error",
-  "gas-limit": "Unpredictable gas limit"
+  "gas-limit": "Unpredictable gas limit",
+  "verify-contract-automatically": "Verify contract to Etherscan automatically"
 }
