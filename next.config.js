@@ -1,7 +1,7 @@
 const nextConfig = {
   reactStrictMode: true,
-  basePath: "/help",
-  assetPrefix: "/help/",
+  basePath: "/docs",
+  assetPrefix: "/docs/",
 }
 
 const withNextra = require("nextra")({
