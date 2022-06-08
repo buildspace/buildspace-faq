@@ -1,5 +1,6 @@
 module.exports = {
   reactStrictMode: true,
+  assetPrefix: "help-assets"
 }
 
 const withNextra = require("nextra")({
