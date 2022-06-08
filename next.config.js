@@ -1,7 +1,6 @@
-module.exports = {
+const nextConfig = {
   reactStrictMode: true,
-  basePath: "/docs",
-  assetPrefix: "/docs/",
+  assetPrefix: "/help-assets/",
 }
 
 const withNextra = require("nextra")({
@@ -10,4 +9,4 @@ const withNextra = require("nextra")({
     unstable_staticImage: true,
 });
 
-module.exports = withNextra();
+module.exports = withNextra(nextConfig);
