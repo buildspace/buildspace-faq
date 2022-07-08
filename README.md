@@ -1,7 +1,7 @@
 <div align="center">
-  <h1 style="font-weight: bold">🦄 Buildspace FAQ</h1>
+  <h1 style="font-weight: bold">🦄 Buildspace localhost</h1>
   <p align="center">
-    Buildspace FAQ is a collection of commonly asked questions from the users. This site lists all questions and answers to help users to better solve their issues during development.
+    Buildspace localhost is a collection of commonly asked questions from the users. This site lists all questions and answers to help users to better solve their issues during development.
   </p>
 </div>
 

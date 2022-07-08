@@ -1,47 +1,27 @@
 ---
 sidebar_position: 1
+slug: /
 ---
 
-# Tutorial Intro
 
-Let's discover **Docusaurus in less than 5 minutes**.
+# Welcome to localhost
 
-## Getting Started
+**Buildspace localhost** is a collection of commonly asked questions from the users. This site lists all questions and answers to help users to better solve their issues during development.
 
-Get started by **creating a new site**.
+## Community
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+Check out the following places for more buildspace-related content:
 
-### What you'll need
+-   Contribute on [Github](https://github.com/buildspace-faq/buildspace-faq)
+-   Join the [discussions on Discord](https://discord.com/invite/buildspace)
+-   Visit [buildspace](https://buildspace.so/) to view all the projects
+-   Follow [@\_buildspace](https://twitter.com/_buildspace) on Twitter for project updates
 
-- [Node.js](https://nodejs.org/en/download/) version 14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+<br />
+<br />
 
-## Generate a new site
+<img src="https://i.imgur.com/7wYs7Mc.png" />
 
-Generate a new Docusaurus site using the **classic template**.
+## Contributing
 
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+If you're interested in contributing, please read the [contributing docs](https://github.com/buildspace/buildspace-faq/blob/main/CONTRIBUTING.md) before submitting a pull request
