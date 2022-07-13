@@ -1,0 +1,1 @@
+# Fetch NFTs details from the contract
