@@ -13,6 +13,6 @@ This happens because the path of your project contains spaces.
 Either replace those spaces with some character or delete them.
 
 ❌ Misguided Fix 
-If you append --program-id <your-program-id> to the command, deploy will "succeed" but then on Solana Explorer no contract is found.
+If you append `--program-id <your-program-id>` to the command, deploy will "succeed" but then on Solana Explorer no contract is found.
 
 Author: [CodePerfect](https://twitter.com/helloitsme_sl)
