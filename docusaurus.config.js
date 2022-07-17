@@ -9,7 +9,7 @@ const config = {
   title: 'buildspace localhost',
   tagline: 'Fix your issues and get off localhost!',
   url: 'https://buildspace.so',
-  baseUrl: '/help/',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
