@@ -8,12 +8,12 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'buildspace localhost',
   tagline: 'Fix your issues and get off localhost!',
-  url: 'https://buildspace.so/help',
+  url: 'https://buildspace.so',
   baseUrl: '/help/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon2.png',
-  organizationName: 'almostefficient',
+  favicon: 'img/favicon.ico',
+  organizationName: 'buildspace',
   projectName: 'buildspace-faq',
 
   // Even if you don't use internalization, you can use this field to set useful
@@ -55,8 +55,8 @@ const config = {
       navbar: {
         title: 'buildspace localhost',
         logo: {
-          alt: 'buildspace localhost Logo',
-          src: 'img/logo.svg',
+          alt: 'buildspace localhost logo',
+          src: 'img/localhost.svg',
         },
         items: [
           // {
@@ -77,18 +77,18 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Buildspace links',
+            title: 'More of buildspace',
             items: [
               {
-                label: 'Buildspace projects',
+                label: 'Projects',
                 to: 'https://buildspace.so/p?utm_source=raza&utm_medium=footer&utm_campaign=search-buildspace',
               },
               {
-                label: 'Buildspace jobs',
+                label: 'Jobs',
                 to: 'https://buildspace.so/jobs?utm_source=raza&utm_medium=footer&utm_campaign=search-buildspace',
               },
               {
-                label: 'Buildspace discover',
+                label: 'Discover',
                 to: 'https://buildspace.so/discover?utm_source=raza&utm_medium=footer&utm_campaign=search-buildspace',
               },
             ],
