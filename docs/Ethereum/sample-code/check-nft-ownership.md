@@ -1,4 +1,5 @@
 # Check if a user owns an NFT
+Guide written by [@helloitsm3](https://github.com/helloitsm3)
 
 There are many ways you can validate if user owns an NFT and in this guide, I will list down some of the ways on how you can go about doing this. 
 
@@ -7,13 +8,15 @@ There are many ways you can validate if user owns an NFT and in this guide, I wi
    - [ERC721](#erc721)
 3. [You can write a subgraph to check if the user owns an NFT (This is the most complicated way and might be a little over kill)](#subgraph)
 
-## ✅ Solution
+## ✅ Solutions
 
 ### Smart contract
    - Although this is the easiest way and fits most of the small NFT projects but it's not ideal if you have a huge NFT project with hundreds of transactions happening a day. Querying from the blockchain can be slow and if you're interested, you can learn more about it [here](https://ethereum.stackexchange.com/questions/123338/why-are-local-reads-so-slow).
 
 
 Before you start, make sure you run `npm install ethers wagmi`
+- [ethers](https://docs.ethers.io/v5/): Allows you to interact with the ethereum blockchain easily using JavaScript.
+- [wagmi](https://wagmi.sh): A collection of React hooks that handles all the account connection and contract interactions.
 
 ```javascript
 import { ethers } from "ethers";
@@ -95,8 +98,8 @@ const App = () => {
 
 ### Subgraph
 You will first need to follow these steps to setup subgraph/
-1. npm install -g @graphprotocol/graph-cli
-2. graph init --product subgraph-studio --from-contract <CONTRACT_ADDRESS>
+1. `npm install -g @graphprotocol/graph-cli`
+2. `graph init --product subgraph-studio --from-contract <CONTRACT_ADDRESS>`
 
 Once that's done, your project file structure should look like this
 ```
