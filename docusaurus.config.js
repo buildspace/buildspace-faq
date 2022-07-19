@@ -15,7 +15,7 @@ const config = {
   favicon: 'img/favicon-shipyard.ico',
   organizationName: 'buildspace',
   projectName: 'buildspace-faq',
-
+  // themes: ['@docusaurus/theme-search-algolia'],
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
@@ -52,6 +52,28 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      // algolia: {
+      //   // The application ID provided by Algolia
+      //   appId: 'UXEM07LQ1Q',
+  
+      //   // Public API key: it is safe to commit it
+      //   apiKey: 'cb4e627bf94e42f8699a376d4799e0e6',
+  
+      //   indexName: 'YOUR_INDEX_NAME',
+  
+      //   // Optional: see doc section below
+      //   contextualSearch: true,
+  
+      //   // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
+      //   // externalUrlRegex: 'external\\.com|domain\\.com',
+  
+      //   // Optional: Algolia search parameters
+      //   // searchParameters: {},
+  
+      //   // Optional: path for search page that enabled by default (`false` to disable it)
+      //   // searchPagePath: 'search',
+
+      // },
       navbar: {
         title: 'localhost',
         logo: {
