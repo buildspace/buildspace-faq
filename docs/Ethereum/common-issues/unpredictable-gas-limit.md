@@ -1,7 +1,7 @@
 # Gas Issues
 ## Unpredictable Gas Limit
 
-**What is Gas Limit?**
+**What is a Gas Limit?**
 
 Gas limit refers to the maximum amount of gas that you're willing to spend on a particular transaction. This error usually happens when you are providing an invalid input when calling a function from your smart contract
 

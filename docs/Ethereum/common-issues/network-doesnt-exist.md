@@ -1,0 +1,35 @@
+# Error HH100: Network Rinkeby/Goerli/Mumbai doesn’t exist
+
+**Why is this happening?**
+
+This is usually caused by not having a rinkeby network in your hardhat.config.js
+
+✅ Solution
+
+Make sure your hardhat.config.js looks like this and also do save your changes before running any commands
+
+```js
+// hardhat.config.js
+require("@nomiclabs/hardhat-waffle");
+require("dotenv").config();
+
+// This is a sample Hardhat task. To learn how to create your own go to
+// https://hardhat.org/guides/create-task.html
+task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
+    const accounts = await hre.ethers.getSigners();
+
+    for (const account of accounts) {
+        console.log(account.address);
+    }
+});
+
+module.exports = {
+    solidity: "0.8.0",
+    networks: {
+        rinkeby: {
+            url: process.env.ALCHEMY_KEY,
+            accounts: [process.env.ACCOUNT_PRIVATE_KEY],
+        },
+    },
+};
+```
