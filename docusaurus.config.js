@@ -12,8 +12,8 @@ const config = {
   baseUrl: '/help/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon2.png',
-  organizationName: 'almostefficient',
+  favicon: 'img/favicon-shipyard.ico',
+  organizationName: 'buildspace',
   projectName: 'buildspace-faq',
 
   // Even if you don't use internalization, you can use this field to set useful
@@ -53,10 +53,11 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'buildspace localhost',
+        title: 'localhost',
         logo: {
           alt: 'buildspace localhost Logo',
-          src: 'img/logo.svg',
+          src: 'img/logo-light.svg',
+          srcDark: 'img/logo-dark.svg',
         },
         items: [
           // {
