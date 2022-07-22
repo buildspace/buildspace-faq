@@ -3,7 +3,6 @@ sidebar_position: 0
 slug: /
 ---
 
-
 # Welcome to localhost
 
 **Buildspace localhost** is a collection of commonly asked questions from the users. This site lists all questions and answers to help users to better solve their issues during development.
