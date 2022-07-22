@@ -4,6 +4,8 @@
 const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
+require("dotenv").config();
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
     title: "buildspace localhost",
@@ -60,9 +62,9 @@ const config = {
             // },
 
             algolia: {
-                appId: "SS3UZTTJJ9",
-                apiKey: "a80d085ec7be3a5367479de9aa724a37",
-                indexName: "dev_buildspacehelp",
+                appId: process.env.ALGOLIA_APP_ID,
+                apiKey: process.env.ALGOLIA_API_KEY,
+                indexName: "prod_localhost",
                 contextualSearch: true,
                 searchPagePath: "search",
             },
